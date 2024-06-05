@@ -1,0 +1,5 @@
+body { font-family: monospace; }
+.range { display: flex; cursor: default; user-select: none; padding: 20px; }
+.range div .range-item { width: 0.6em; height: 2.5ex; display: flex; flex-direction: column; font-size: 500%; }
+.range div .range-item-example { width: 0.6em; height: 2.5ex; display: flex; flex-direction: column; font-size: 500%; border: solid 1px black; }
+.range div .range-threshold { display: flex; flex-direction: column; font-size: small; text-align: center; }

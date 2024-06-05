@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+  </head>
+  <body>
+    <!-- YOU DO NOT NEED TO MODIFY THIS FILE TO PASS THE EXAM -->
+    <h1>Booking</h1>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    
+    <div style="float:right; width: 50%">
+      <h1>(rendered example)</h1>
+      <h2>1 - Initial state</h2>
+      <div class="range">
+        <div><div class="range-item" clickHandlerGoesHere="..."> </div><span class="range-threshold">30</span></div>
+        <div><div class="range-item">●</div><span class="range-threshold">40</span></div>
+        <div><div class="range-item">—</div><span class="range-threshold">50</span></div>
+        <div><div class="range-item">—</div><span class="range-threshold">60</span></div>
+        <div><div class="range-item">●</div><span class="range-threshold">70</span></div>
+        <div><div class="range-item"></div><span class="range-threshold">80</span></div>
+      </div>
+      <h2>2 - After clicking on the first circle</h2>
+      <div class="range">
+        <div><div class="range-item"> </div><span class="range-threshold">30</span></div>
+        <div><div class="range-item" style="color: green">●</div><span class="range-threshold">40</span></div>
+        <div><div class="range-item">—</div><span class="range-threshold">50</span></div>
+        <div><div class="range-item">—</div><span class="range-threshold">60</span></div>
+        <div><div class="range-item">●</div><span class="range-threshold">70</span></div>
+        <div><div class="range-item"></div><span class="range-threshold">80</span></div>
+      </div>
+      <h2>3 - After clicking on the line over '50'</h2>
+      <div class="range">
+        <div><div class="range-item"> </div><span class="range-threshold">30</span></div>
+        <div><div class="range-item"></div><span class="range-threshold">40</span></div>
+        <div><div class="range-item">●</div><span class="range-threshold">50</span></div>
+        <div><div class="range-item">—</div><span class="range-threshold">60</span></div>
+        <div><div class="range-item">●</div><span class="range-threshold">70</span></div>
+        <div><div class="range-item"></div><span class="range-threshold">80</span></div>
+      </div>
+      <h2>(case #2 with DIVs highlighted)</h2>
+      <div class="range">
+        <div><div class="range-item-example"> </div><span class="range-threshold">30</span></div>
+        <div><div class="range-item-example" style="color: green">●</div><span class="range-threshold">40</span></div>
+        <div><div class="range-item-example">—</div><span class="range-threshold">50</span></div>
+        <div><div class="range-item-example">—</div><span class="range-threshold">60</span></div>
+        <div><div class="range-item-example">●</div><span class="range-threshold">70</span></div>
+        <div><div class="range-item-example"></div><span class="range-threshold">80</span></div>
+      </div>
+    </div>
+
+  </body>
+</html>
