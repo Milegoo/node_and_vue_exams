@@ -125,7 +125,8 @@ export default{
     <div v-for="(threshold, index) in thresholds">
       <div v-if="thresholdsValues[index] && index != greenCircleId" class="range-item" @click="blackClicked(index)" style='color: black'>●</div>
       <div v-if="thresholdsValues[index] && index == greenCircleId" class="range-item" @click="greenClicked(index)" style='color: green'>●</div>
-      <div v-if="!thresholdsValues[index]" class="range-item" @click="lineClicked(index)">–</div>
+      <div v-if="!thresholdsValues[index] && !(index > indexMax || index < indexMin)" class="range-item" @click="lineClicked(index)">-</div>
+      <div v-if="!thresholdsValues[index] && (index > indexMax || index < indexMin)" class="range-item" @click="lineClicked(index)"></div>
       <span class="range-threshold">{{threshold}}</span>
     </div>
 </div>
