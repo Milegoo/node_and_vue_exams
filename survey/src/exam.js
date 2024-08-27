@@ -88,7 +88,7 @@ const SurveyServer = function() {
 //tests
 let getDelayedPromise = getDelayedPromiseGenerator();
 
-/*
+
 //test 1 (ended by timeout) expected result: {participants:3 responses:[1,2,0,0,0]}
 //----------------------------------------------------------------------------------
 let ss = new SurveyServer()
@@ -104,7 +104,7 @@ ss.addResponse(op_1)
 let op_11 = getDelayedPromise(1)
 ss.addResponse(op_11)
 
-*/
+
 /*
 //test2 (ended by the last resolved promise (op_1)) expected result: {participants:3 responses:[0,0,1,2,0]}
 //----------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ ss.addResponse(op_33)
 
 
 //== Web Server ==============================================================
-
+/*
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
@@ -163,8 +163,8 @@ app.get('/results', (req, res)=>{
       console.log("sending response");
     }, 1000)
   }*/
-})
+/*})
 
-app.listen(port, () => console.log(`Server listening on port ${port}!`))
+app.listen(port, () => console.log(`Server listening on port ${port}!`))*/
 
 
